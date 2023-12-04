@@ -284,28 +284,34 @@ export default defineConfig({
       icon: 'highlight',
       path: '/editor',
       routes: [
+        // {
+        //   path: '/editor',
+        //   redirect: '/editor/flow',
+        // },
+        // {
+        //   name: 'flow',
+        //   icon: 'smile',
+        //   path: '/editor/flow',
+        //   component: './editor/flow',
+        // },
         {
-          path: '/editor',
-          redirect: '/editor/flow',
-        },
-        {
-          name: 'flow',
+          name: 'lowcode',
           icon: 'smile',
-          path: '/editor/flow',
-          component: './editor/flow',
+          path: '/editor/lowcode',
+          component: './editor/lowcode',
         },
-        {
-          name: 'mind',
-          icon: 'smile',
-          path: '/editor/mind',
-          component: './editor/mind',
-        },
-        {
-          name: 'koni',
-          icon: 'smile',
-          path: '/editor/koni',
-          component: './editor/koni',
-        },
+        // {
+        //   name: 'mind',
+        //   icon: 'smile',
+        //   path: '/editor/mind',
+        //   component: './editor/mind',
+        // },
+        // {
+        //   name: 'koni',
+        //   icon: 'smile',
+        //   path: '/editor/koni',
+        //   component: './editor/koni',
+        // },
       ],
     },
     {
@@ -352,7 +358,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  mfsu: {},
+  // mfsu: {},
   webpack5: {},
   exportStatic: {},
 });
